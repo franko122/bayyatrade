@@ -1,7 +1,6 @@
- 
 var mobclose=document.getElementById('mobclose');
 var lopio=document.getElementById('lopio');
-var lacklose=document.getElementById('lacklose');
+var lacklose=document.getElementById('lacklose'); 
  
 mobclose.addEventListener('click',  ()=>{
         lopio.style.display='block';
@@ -14,7 +13,13 @@ lacklose.addEventListener('click',()=>{
 var tered=document.getElementById('tered');
 var close=document.getElementById('close');
  
- close.addEventListener('click' ,()=>{
-          kill  .style.display='none';
- })     
 
+const bady=document.getElementById('bady');
+const anoc=document.getElementById('anothercloser');
+const fundwith=document.getElementById('fundwith');
+fundwith.addEventListener('click',()=>{
+      bady.style.display="block";
+})
+anoc.addEventListener('click',()=>{
+           bady.style.display="none";
+});

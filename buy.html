@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="userside.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="fontss/fontawesome-free-5.15.3-web/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy</title>
     <style>
@@ -19,6 +21,10 @@
             background-size:  100% 100%;
             background-image: url('/images/slider/bg1.jpg');
         }
+.leto{
+     text-decoration: none;
+     color: white;
+}
         .down{
             margin: auto;
             width: 35%;
@@ -47,6 +53,21 @@
             color: gray;
             padding: 10px;
         }
+
+.appp{
+    padding: 5px;
+    color: white;
+   background-color: #fd961a;
+   border: none;
+   font-size: 13px;
+   cursor: pointer;
+}
+.watbtn{
+    margin: auto;
+    width: 15%; 
+    margin-top: -72px; 
+    cursor: pointer;
+}
         .rightt{
             width:30%;
             height: 40px;
@@ -70,7 +91,77 @@
              border: none;
              color: white;
         }
-    </style>
+        @media (max-width:425px) {  
+    .watbtn{ 
+        width: 50%;
+        margin-top: -230px;
+    }
+    .inpu-div{
+        width: 80%;
+    } 
+    .down{
+        width: 80%;
+    }
+}
+    </style>    
+     <div class="crypto-layouts">
+        <marquee behavior="" direction="" class="marqss">
+            <div class="crypto-one"><i class="fab fa-bitcoin"></i>
+                <b class="its">Bitcoin</b>
+                <b class="it">$88.87</b>
+                <p class="btcprise"> <a href="https://www.blockchain.com/prices/BTC" class="plizr" target="blanki">
+                        +2.36%</a></p>
+            </div>
+        </marquee>
+
+        <marquee behavior="" direction="">
+            <div class="crypto-one"><i class="fab fa-ethereum"></i>
+                <b class="it">Etheleum</b>
+                <b class="it">$88.87</b>
+                <p class="btcprise"> <a href="https://www.blockchain.com/prices/ETH" class="plizrs" target="blanki">
+                        +2.36%</a></p>
+            </div>
+
+        </marquee>
+
+        <marquee behavior="" direction="">
+            <div class="crypto-one"><img src="https://img.icons8.com/pastel-glyph/64/000000/tron.png"/>
+                <b class="it">Tron</b>
+                <b class="it">$88.87</b>
+                <p class="btcprise"> <a href=" https://www.blockchain.com/prices/TRON" class="plizrser" target="blanki"> -2.36%</a></p>
+            </div>
+
+        </marquee>
+
+        <marquee behavior="" direction="">
+            <div class="crypto-one"><i class="fas fa-dog"></i>
+                <b class="it">Doge</b>
+                <b class="it">$88.87</b>
+                <p class="btcprise"> <a href="https://www.blockchain.com/prices/DOGE" class="plizr" target="blanki">
+                        -2.36%</a></p>
+            </div>
+
+        </marquee>
+
+        <marquee behavior="" direction="">
+            <div class="crypto-one"><i class="fab fa-uniregistry"></i>
+                <b class="it">Uni</b>
+                <b class="it">$88.87</b>
+                <p class="btcprise"> <a href="https://www.blockchain.com/prices/UNI" class="plizr" target="blanki">
+                        +2.36%</a></p>
+            </div>
+
+        </marquee>
+
+        <marquee behavior="" direction="">
+            <div class="crypto-one"><i class="fab fa-instalod"></i>
+                <b class="it">ALGO</b>
+                <b class="it">$88.87</b>
+                <p class="btcprise"> <a href="https://www.blockchain.com/prices/ALGO" class="plizrs" target="blank">
+                        -2.36%</a></p>
+            </div>
+        </marquee>
+    </div>
 </head>
 <body>  
 <div class="buy-div-one">
@@ -109,6 +200,13 @@
         </div> 
    </div>
     </form>
-</div> 
+</div>  
+<div class="watbtn">
+   <button class="appp">
+       <a href="https://wa.me/09036837024" class="leto">
+        Am cunfused chart us on whatsapp
+    </a>
+   </button>
+</div>
 </body>
 </html>

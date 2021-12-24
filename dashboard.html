@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontss/fontawesome-free-5.15.3-web/attribution.js">
+    <link rel="stylesheet" href="./fontss/Noto_Sans_JP/NotoSansJP-Black.otf">
+    <link rel="stylesheet" href="./fontss/fontawesome-free-5.15.3-web/css/all.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        .hangtop {
+            width: 100%;
+            position: fixed;
+            height: 900px;
+            display: none;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.397);
+        }
+
+        .container {
+            width: 100%;
+            height: 900px;
+            display: flex;
+        }
+
+        .one {
+            width: 25%;
+            height: inherit;
+            background-color: rgb(243, 243, 243);
+        }
+
+        .two {
+            background-color: rgba(0, 0, 0, 0.568);
+            background-blend-mode: multiply;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-image: url("./images/slider/bg1.jpg");
+            height: inherit;
+        }
+
+        .majo {
+            color: gray;
+            font-size: 15px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .tails {
+            cursor: pointer;
+        }
+
+        .long {
+            width: 80%;
+            display: flex;
+            margin: auto;
+            align-self: center;
+            justify-content: space-around;
+            height: 250px;
+        }
+
+        .them {
+            width: 30%;
+            height: 159px;
+            align-self: center;
+            border: 2px solid #fd961a;
+            background-color: inherit;
+        }
+
+        .theme {
+            width: 30%;
+            height: 159px;
+            align-self: center;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            border: 2px solid #fd961a;
+            background-color: inherit;
+        }
+
+        .people {
+            font-size: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .peoples {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .add {
+            color: white;
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .down-select {
+            margin: auto;
+            width: 80%;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.493);
+        }
+
+        .list {
+            align-items: center;
+            justify-content: space-around;
+            display: flex;
+            width: 100%;
+            height: 50px;
+            color: white;
+            background-color: #fd961a;
+        }
+
+        b {
+            cursor: pointer;
+        }
+
+        .mach {
+            border-bottom: solid 3px white;
+        }
+
+        .userdiv {
+            width: 100%;
+            height: inherit;
+            overflow: scroll;
+            background-color: white;
+        }
+
+        .userdivs {
+            width: 100%;
+            overflow: scroll;
+            display: none;
+            height: inherit;
+            background-color: white;
+        }
+
+        .warmer {
+            width: 98%;
+            display: none;
+            padding: 10px;
+            overflow: scroll;
+            height: inherit;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .selldiv {
+            width: 98%;
+            overflow: scroll;
+            display: none;
+            height: inherit;
+            padding:10px;
+            background-color: white;
+        }
+
+        .buydiv {
+            width: 100%;
+            display: none;
+            height: inherit;
+            background-color: rgb(46, 46, 46);
+        }
+
+        .sertd {
+            padding: 10px;
+        }
+
+        .userone {
+            margin: auto;
+            width: 98%;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            justify-content: space-around;
+            background-color: rgb(233, 233, 233);
+        }
+
+        .cir {
+            font-size: 25px;
+            border-radius: 10000px;
+            width: 5%;
+            background-color: #8d8d8d3f;
+            display: flex;
+            cursor: pointer;
+            text-align: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        .eamilsamlaa {
+            font-size: 13px;
+            color: rgb(109, 109, 109);
+        }
+
+        .usering {
+            width: 100%;
+            text-align: center;
+        }
+
+        .hangside {
+            width: 65%;
+            margin: auto;
+            height: 190px;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .dety {
+            text-align: center;
+            color: rgb(117, 117, 117);
+        }
+
+        .lityu {
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(235, 235, 235);
+        }
+
+        .lity {
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            font-size: 10px;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .lete {
+            border: none;
+            width: 40%;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            font-size: 12px;
+            background-color: rgb(255, 28, 28);
+            display: block;
+        }
+
+        .deldiv {
+            float: right;
+            display: flex;
+            height: 40px;
+            justify-content: space-between;
+            width: 25%;
+        }
+
+        .suhert {
+            color: rgb(99, 99, 99);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        .secondhange {
+            width: 100%;
+            position: fixed;
+            display: none;
+            height: 900px;
+            background-color: rgba(0, 0, 0, 0.548);
+        }
+
+        .insecond {
+            width: 70%;
+            padding: 10px;
+            height: 250px;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+        }
+
+        .val {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .lityi {
+            width: 98%;
+            font-size: 13px;
+            height: 60px;
+            padding: 5px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .analises {
+            width: 98%;
+            font-size: 13px;
+            height: 60px;
+            padding: 5px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            color: gray;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .slider {
+            float: right;
+            height: 40px;
+            width: 14%;
+            border: none;
+            color: white;
+            cursor: pointer;
+            background-color: red;
+        }
+        .holdson{
+            background-color: rgb(235, 235, 235);
+             width: 98%;   
+             display: none;
+             padding: 10px;
+             height: 200px;
+            box-shadow: 0px 1px 5px 5px rgb(216, 216, 216)  ;
+        }
+        .`{
+            background-color: rgb(235, 235, 235);
+             width: 98%;    
+             padding: 10px;
+             height: 200px;
+             display: none;
+            box-shadow: 0px 1px 5px 5px rgb(216, 216, 216)  ;
+        }
+        .hold{
+            width: 100%;  
+        }
+.sonlist{
+    width: 100%;
+    height: 40px;
+    display: flex; 
+    align-items: center;
+    font-size: 12px;
+    justify-content: space-around; 
+}
+.sonlister{
+    width: 100%;
+    height: 40px;
+    color: gray;
+    display: flex; 
+    align-items: center;
+    font-size: 10px;
+    justify-content: space-around; 
+}
+.sonlisterin{
+    width: 100%;
+    height: 40px;
+    color: gray;
+    display: flex; 
+    align-items: center;
+    font-size: 10px;
+    justify-content: space-between; 
+}
+.caswap{
+    display: block;
+    float: right;
+    width: 10%;
+    cursor: pointer;
+padding: 10px;
+background-color: red;
+color: white;
+border: none;
+outline: none;
+}
+    </style>
+    <div class="secondhange" id="aldiv">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="insecond">
+            <b>
+                <div class="val">
+                    Invest values
+                </div>
+            </b>
+            <br>
+            <div class="lityi">
+                <b>Name</b>
+                <b>Phone</b>
+                <b>Email</b>
+                <b>Amount invested</b>
+                <b>BTC wallet address</b>
+                <b>ETH wallet address</b>
+            </div>
+            <br>
+            <div class="analises">
+                <b>Frank</b>
+                <b>+234 744-4 23</b>
+                <b>Frankingle@gmail.com</b>
+                <b>$400</b>
+                <b>ydrfg76ebfhce8gcve87fiu4yf</b>
+                <b>hfg4vnreufjh84ef4jeh48tuh</b>
+            </div>
+            <button class="slider" id="closeval">
+                cansel
+            </button>
+        </div>
+    </div>
+    <div class="hangtop" id="dider">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="hangside">
+            <b>
+                <div class="dety">User details</div>
+            </b>
+            <br>
+            <div class="lityu">
+                <b>Name</b>
+                <b>Email</b>
+                <b>password</b>
+                <b>BTC wallet address</b>
+                <b>ETH wallet address</b>
+            </div>
+            <br>
+            <div class="lity">
+                <b class="suhert">Frank</b>
+                <b class="suhert">Frankisnaptwingle@gmail.com</b>
+                <b class="suhert">346723485</b>
+                <b class="suhert">hdgef63vdfm4iuygt4tn7r47rn</b>
+                <b class="suhert">jfhgh98e7rgvbfdsuhfdewir3gt</b>
+            </div>
+            <div class="deldiv">
+                <button type="reset" class="lete">
+                    Delete user
+                </button>
+                <button class="lete" id="can">
+                    Cansel
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="two">
+            <div class="long">
+                <div class="them">
+                    <br>
+                    <b>
+                        <div class="people">
+                            100</div>
+                    </b>
+                    <br>
+                    <br>
+                    <b>
+                        <div class="peoples">Total users</div>
+                    </b>
+                </div>
+                <div class="them">
+                    <br>
+                    <b>
+                        <div class="people">
+                            3300$</div>
+                    </b>
+                    <br>
+                    <br>
+                    <b>
+                        <div class="peoples">Balance</div>
+                    </b>
+
+                </div>
+                <div class="theme">
+                    <div class="add">
+                        <b class="add"> <a href="" class="add">Change wallet Address</a></b>
+                    </div>
+                </div>
+            </div>
+            <div class="down-select">
+                <div class="list">
+                    <b class="mach" id="machala">View users </b>
+                    <b id="view">view invest value</b>
+                    <b id="swap">view swap value</b>
+                    <b id="sell">view sell value</b>
+                    <b id="buy">view buy value</b>
+                </div>
+                <div class="userdiv" id="sert">
+                    <br>
+                    <b class="sertd">Users</b>
+                    <br>
+                    <br>
+                    <div class="userone">
+                        <div class="cir">
+                            <i class="fas fa-user usering"></i>
+                        </div>
+                        <b class="eamilsamlaa">Frankisnaptwingle@gmail.com</b>
+                        <b class="eamilsamlaa">Ohio ojiko</b>
+                        <button class="tails" id="deals">View details</button>
+                    </div>
+                    <br>
+                    <div class="userone">
+                        <div class="cir">
+                            <i class="fas fa-user usering"></i>
+                        </div>
+                        <b class="eamilsamlaa">Frankisnaptwingle@gmail.com</b>
+                        <b class="eamilsamlaa">Ohio ojiko</b>
+                        <button class="tails" id="deals">View details</button>
+                    </div>
+                </div>
+                <div class="userdivs" id="inver">
+                    <br>
+                    <b class="sertd">
+                        Invest Informations</b>
+                    <br>
+                    <br>
+                    <div class="userone">
+                        <div class="cir">
+                            <i class="fas fa-user usering"></i>
+                        </div>
+                        <b class="eamilsamlaa">+1 837-34-34-4343</b>
+                        <b class="eamilsamlaa">Ohio ojiko</b>
+                        <button class="tails" id="infor">View details</button>
+                    </div>
+                    <br>
+                    <div class="userone">
+                        <div class="cir">
+                            <i class="fas fa-user usering"></i>
+                        </div>
+                        <b class="eamilsamlaa">+1 837-34-34-4343</b>
+                        <b class="eamilsamlaa">Ohio ojiko</b>
+                        <button class="tails" id="infor">View details</button>
+                    </div>
+                </div>
+                <div class="warmer" id="armer"> 
+                    <br>
+                    <b>Swap value</b>
+                    <br>
+                    <br> 
+                    <div class="hold">
+                    <div class="userone">
+                        <div class="cir">
+                            <i class="fas fa-user usering"></i>
+                        </div>
+                        <b class="eamilsamlaa">Frankisnaptwingle@gmail.com</b>
+                        <b class="eamilsamlaa">MJCHFJDSOHF3EBF734RBR87HGF</b>
+                        <button class="tails" id="viewson" >View details</button>
+                    </div>
+                    <br>
+                    <div class="holdson" id="son">
+                        <div class="sonlist"> 
+                            <b>From</b>
+                            <b>To</b>
+                            <b>Amount swaped</b> 
+                            <b>Phrase</b>
+                            <b>persentage</b>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="sonlister"> 
+                            <b>ETH</b>
+                            <b>BTC</b>
+                            <b>500$</b> 
+                            <b>NBXSD SHBD SDVSD WGSDVWX WUSD WYXWS DT</b>
+                            <b>30</b>
+                        </div>
+                        <br>
+                        <button  type="reset" class="caswap" id="sel">
+                            cansel
+                        </button>
+                    </div>
+                    </div>
+                    <br> 
+                    <div class="hold">
+                    <div class="userone">
+                        <div class="cir">
+                            <i class="fas fa-user usering"></i>
+                        </div>
+                        <b class="eamilsamlaa">Frankisnaptwingle@gmail.com</b>
+                        <b class="eamilsamlaa">MJCHFJDSOHF3EBF734RBR87HGF</b>
+                        <button class="tails" id="viewson" >View details</button>
+                    </div>
+                    <br>
+                    <div class="holdson" id="son">
+                        <div class="sonlist"> 
+                            <b>From</b>
+                            <b>To</b>
+                            <b>Amount swaped</b> 
+                            <b>Phrase</b>
+                            <b>persentage</b>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="sonlister"> 
+                            <b>ETH</b>
+                            <b>BTC</b>
+                            <b>500$</b> 
+                            <b>NBXSD SHBD SDVSD WGSDVWX WUSD WYXWS DT</b>
+                            <b>30</b>
+                        </div>
+                        <br>
+                        <button  type="reset" class="caswap" id="sel">
+                            cansel
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="selldiv" id="turn">   
+                        <br>
+                    <b>Sell value</b>
+                    <br> 
+                    <br>  
+                    <div class="hold">
+                    <div class="userone">
+                        <div class="cir">
+                            <i class="fas fa-user usering"></i>
+                        </div>
+                        <b class="eamilsamlaa">Frankisnaptwingle@gmail.com</b>
+                        <b class="eamilsamlaa">500$</b>
+                        <button class="tails" id="seed" >View details</button>
+                    </div>
+                    <br>
+                    <div class="holdsoner" id="diclose">
+                        <div class="sonlist"> 
+                            <b>coin sell</b>
+                            <b>Bank acc Name</b>
+                            <b>Bank acc number</b> 
+                            <b>Phrase</b> 
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="sonlisterin"> 
+                            <b>ETH</b>
+                            <b> frank okechukwu</b>
+                            <b>500323</b> 
+                            <b>NBXSD SHBD SDVSD WGSDVWX WUSD WYXWS DT</b> 
+                        </div>
+                        <br>
+                        <button  type="reset" class="caswap" id="btnse">
+                            cansel
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="buydiv" id="buyer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+const machala = document.getElementById("machala");
+const view = document.getElementById("view");
+const sert = document.getElementById("sert");
+const inver = document.getElementById("inver");
+const swap = document.getElementById("swap");
+const armer = document.getElementById("armer");
+const sell = document.getElementById("sell");
+const turn = document.getElementById("turn");
+const buy = document.getElementById("buy");
+const buyer = document.getElementById("buyer");
+const can = document.getElementById("can");
+const dider = document.getElementById("dider");
+const deals = document.getElementById("deals");
+const valdiv = document.getElementById("aldiv");
+const closeval = document.getElementById("closeval");
+const infor = document.getElementById("infor");
+const son=document.getElementById("son");
+const viewson=document.getElementById("viewson");
+const sel=document.getElementById("sel");
+const seed=document.getElementById("seed");
+const disclose=document.getElementById("diclose");
+const btnsel=document.getElementById("btnse");
+ 
+btnse.addEventListener("click" ,()=>{
+    diclose.style.display="none";
+});
+seed.addEventListener("click",()=>{
+    diclose.style.display="block";
+});
+
+
+sel.addEventListener("click",()=>{
+    son.style.display="none";
+});
+
+          viewson.addEventListener("click",()=>{
+               son.style.display="block";
+          });
+
+        infor.addEventListener("click", () => {
+            aldiv.style.display = "block";
+        });
+
+        closeval.addEventListener("click", () => {
+            aldiv.style.display = "none";
+        });
+
+        deals.addEventListener("click", () => {
+            dider.style.display = "block";
+        });
+
+        can.addEventListener("click", () => {
+            dider.style.display = "none";
+        });
+
+        buy.addEventListener("click", () => {
+            buyer.style.display = "block";
+            turn.style.display = "none";
+            armer.style.display = "none";
+            inver.style.display = "none";
+            sert.style.display = "none";
+            buy.style.borderBottom = "white solid 3px";
+            sell.style.borderBottom = "none";
+            view.style.borderBottom = "none";
+            swap.style.borderBottom = "none";
+            swap.style.borderBottom = "none";
+            machala.style.borderBottom = "none";
+        });
+
+        sell.addEventListener("click", () => {
+            buyer.style.display = "none";
+            buy.style.borderBottom = "none";
+            armer.style.display = "none";
+            turn.style.display = "block";
+            sell.style.borderBottom = "white solid 3px";
+            swap.style.borderBottom = "none";
+            view.style.borderBottom = "none";
+            machala.style.borderBottom = "none";
+            sert.style.display = "none";
+            inver.style.display = "none";
+        })
+
+        swap.addEventListener("click", () => {
+            buyer.style.display = "none";
+            buy.style.borderBottom = "none";
+            turn.style.display = "none";
+            sell.style.borderBottom = "none";
+            machala.style.borderBottom = "none";
+            inver.style.display = "none";
+            view.style.borderBottom = "none";
+            sert.style.display = "none";
+            armer.style.display = "block";
+            swap.style.borderBottom = "white solid 3px";
+        });
+
+        view.addEventListener('click', () => {
+            buyer.style.display = "none";
+            buy.style.borderBottom = "none";
+            turn.style.display = "none";
+            sell.style.borderBottom = "none";
+            armer.style.display = "none";
+            swap.style.borderBottom = "none";
+            machala.style.borderBottom = "none";
+            view.style.borderBottom = "solid 3px white";
+            sert.style.display = "none";
+            inver.style.display = "block";
+        });
+        machala.addEventListener('click', () => {
+            buyer.style.display = "none";
+            buy.style.borderBottom = "none";
+            turn.style.display = "none";
+            sell.style.borderBottom = "none";
+            armer.style.display = "none";
+            swap.style.borderBottom = "none";
+            inver.style.display = "none";
+            machala.style.borderBottom = "white solid 3px";
+            view.style.borderBottom = "none";
+            sert.style.display = "block";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    background-color:rgb(87, 177, 255);
+    font-weight: 300;
+}
+.brmob{
+    display: none;
+}
+.appp{
+    border-radius: 5px;
+}
+.teder{
+    font-size: 11px;
+    cursor: pointer;
+}
+.walediv{
+    width: 100%;
+    height: inherit;
+} 
+.imgscan{
+    margin: auto;
+    width: 30%;
+    height: 130px;
+    background-color: rgb(124, 122, 122);
+}
+.vested{
+    color: white;
+    text-align: center;
+}
+.walety{
+    text-align: center;
+    color: white;
+}
+.status-div{
+    width: 40%;
+    margin: auto; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.containerd{
+    height: 900px;
+    background-image: url('./images/slider/bg1.jpg');
+    background-color: rgba(0, 0, 0, 0.664);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: 100% 100%;
+}
+.content{
+    width: fit-content;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto; 
+    position: relative;
+}
+.content h2{
+     cursor: pointer;
+     font-size: 15px;
+     font-weight: 700;
+}
+.popup{
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transform:  translate(-50% ,-20px);
+    opacity: 0;
+    pointer-events: none;
+}
+.popup.active{
+   animation: popup 1s ease-in-out forwards;
+}
+@keyframes popup{
+    0%{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -20px);
+    }
+    40%{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0px);
+    }
+    80%{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0px);
+    }
+    100%{
+        opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -20px);
+    }
+}
+@media (max-width:425px){
+     .containerd{ 
+         width: 100%;
+     }
+.status-div{
+    width: 100%;
+}
+.content{
+    width:80%;  
+}
+.fonsi{
+   font-size: 11px;
+}
+.brakemob{
+   display: block;
+}
+.scan{
+    font-size: 11px;
+}
+.imgscan{
+    width: 40%;
+}
+.brmob{
+    display: block;
+}
+}

