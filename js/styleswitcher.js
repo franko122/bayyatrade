@@ -1,5 +1,15 @@
 /**	STYLE SWITCHER
 *************************************************** **/
+const certdiv=document.getElementById("certdiv");
+const certclose=document.getElementById("certclose");
+const showcert=document.getElementById("showcert");
+showcert.addEventListener("click",()=>{
+       certdiv.style.display="block";
+});
+    certclose.addEventListener("click" ,()=>{
+		certdiv.style.display="none";
+	});
+
 jQuery(document).ready(function() {
 	"use strict";
 
