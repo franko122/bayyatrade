@@ -9,10 +9,8 @@ showcert.addEventListener("click",()=>{
     certclose.addEventListener("click" ,()=>{
 		certdiv.style.display="none";
 	});
-
 jQuery(document).ready(function() {
 	"use strict";
-
     jQuery("#hideSwitcher, #showSwitcher").click(function () {
 
         if (jQuery("#showSwitcher").is(":visible")) {
